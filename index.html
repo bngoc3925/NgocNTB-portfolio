@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngo Thi Bao Ngoc | Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <div class="logo">Bao Ngoc</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <p class="subtitle">Full-Stack Developer</p>
+
+                <h1>
+                    Hi, I'm <span>Ngo Thi Bao Ngoc</span>
+                </h1>
+
+                <h3 id="typing-text"></h3>
+
+                <p class="hero-description">
+                    Software Engineering student at FPT University with strong interest in
+                    Full-Stack Development, .NET technologies, and Web Development.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Profile">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-card">
+
+        <div>
+            <p>
+              Hello — I'm <strong>Ngo Thi Bao Ngoc</strong>, a <em>Full-Stack Developer</em> skilled
+              in building reliable, user-friendly applications. I enjoy working on
+              both frontend and backend, with experience in Java, C#, .NET, and modern
+              web technologies. I graduated from <strong>FPT University</strong> with a
+              degree in Software Engineering.
+            </p>
+            <ul>
+              <li>    <strong>Role:</strong> Full-Stack Developer</li>
+              <li><strong>University:</strong> FPT University</li>
+              <li><strong>Interests:</strong> Web apps, automation, UX, testing</li>
+            </ul>
+        </div>
+          <div>
+            <p class="quote">"Clean code and thoughtful UX matter most to me."</p>
+          </div>
+
+</div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>Java, C#, JavaScript</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, WPF</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Backend</h3>
+                    <p>.NET, JSP/Servlet</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Database</h3>
+                    <p>SQL Server, MySQL</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+<section id="projects" class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">Projects</h2>
+
+        <!-- FILTER BUTTONS -->
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="java">
+                Java
+            </button>
+
+            <button class="filter-btn" data-filter=".net">
+                .NET
+            </button>
+
+            <button class="filter-btn" data-filter="web">
+                Web
+            </button>
+
+        </div>
+
+        <!-- PROJECT GRID -->
+        <div class="projects-grid">
+
+            <!-- PROJECT 1 -->
+            <div class="project-card" data-category=".net">
+
+    <div class="project-content">
+
+        <h3>iPhone Inventory Management System</h3>
+
+        <p>
+            A desktop inventory app for a retail store.
+            Focus on stock tracking and account control.
+        </p>
+
+        <div class="tech-stack">
+            <span>C#</span>
+            <span>.NET</span>
+            <span>WPF</span>
+            <span>SQL Server</span>
+        </div>
+
+        <div class="project-buttons">
+
+            <button
+                class="detail-btn"
+                onclick="openModal(
+                'iPhone Inventory Management System',
+                'A centralized platform that helps manage iPhone products, users, transactions, and revenue tracking. Includes account management, search/filter, and GitHub collaboration.',
+                'https://github.com/PRN212-IIMS/IphoneInventoryManagement'
+                )"
+            >
+                View Details
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- PROJECT 2 -->
+            <div class="project-card" data-category="java web">
+
+    <div class="project-content">
+
+        <h3>Hotel Management System</h3>
+
+        <p>
+            Web & desktop components for booking,
+            checkout, and service management.
+        </p>
+
+        <div class="tech-stack">
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>HTML/CSS</span>
+            <span>SQL Server</span>
+        </div>
+
+        <div class="project-buttons">
+
+            <button
+                class="detail-btn"
+                onclick="openModal(
+                'Hotel Management System',
+                'Hotel management application developed with MVC architecture. Features include booking, checkout, and service management modules.',
+                'https://github.com/swpHMS/Hotel-Management-System'
+                )"
+            >
+                View Details
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="projectModal">
+
+    <div class="modal-content">
+
+        <span class="close-btn" onclick="closeModal()">
+            &times;
+        </span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+        <a
+            id="modalGithub"
+            href="#"
+            target="_blank"
+            class="github-link"
+        >
+            View GitHub Repository
+        </a>
+
+    </div>
+
+</div>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">Education</h2>
+
+            <div class="education-card">
+
+                <h3>FPT University</h3>
+
+                <p>Software Engineering</p>
+
+                <p>2023 - 2028</p>
+
+                <p>GPA: 3.2 / 4</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">Certificates</h2>
+
+            <div class="certificate-grid">
+
+                <div class="certificate-card">TOEIC 535</div>
+
+                <div class="certificate-card">AI For Everyone</div>
+
+                <div class="certificate-card">
+                    UX Research and Design
+                </div>
+
+                <div class="certificate-card">
+                    Web Design for Everybody
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact-card">
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email: nngo6337@gmail.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    Phone: 0335836307
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Ngo Thi Bao Ngoc</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
